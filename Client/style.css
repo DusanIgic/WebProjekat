@@ -1,0 +1,140 @@
+body{
+  margin: auto;
+  --boja1: #f6d809;
+  --boja2: #f2fffd;
+  --boja3: #729dc5;
+  --boja4: #395d8d;
+  --boja5: #27a7bb;
+  --slova: #000000;
+  
+  color: var(--slova);
+  background-color: var(--boja2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.meni{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+}
+.meniItem{
+  height: auto;
+  width: 34%;
+
+  border: solid;
+  border-color: var(--boja3);
+  border-width: 2px;
+
+  background-color: var(--boja4);
+
+  text-align: center;
+  overflow: hidden;
+  z-index: 500;
+  transition: all 0.3s;
+}
+.meniItem:hover{
+  background-color: var(--boja3);
+}
+.drzaveMeni{
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.inputKlasa{
+  width: 60vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.inputKlasa>div{
+  margin:5px;
+}
+button{
+  height: 5vh;
+}
+.inputi{
+  display: flex;
+}
+.stranica{
+  display:none;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.tabeleKont{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.subInputi{
+  display: none;
+}
+.ostalo{
+  display: none;
+}
+th, td{
+  border: 3px solid;
+  overflow-wrap: anywhere;
+  text-align: center;
+  width: 50%;
+}
+.tabelaDrzava{
+  width: 80vw;
+}
+.tabelaDrzava>tr>th,.tabelaDrzava>tr>td{
+  width: auto;
+}
+tr{
+  height: 7vh;
+}
+.tabelaZelena,.tabelaZelena>tr>th,.tabelaZelena>tr>td{
+  border-color: green;
+}
+.tabelaCrvene,.tabelaCrvene>tr>th,.tabelaCrvene>tr>td{
+  border-color: red;
+}
+.stroga{
+  border-color: red;
+}
+.nestroga,.nestroga>tr>th,.nestroga>tr>td{
+  border-color: rgb(255, 166, 0);
+}
+table{
+  padding: 5px;
+  margin: 3px;
+  border: 5px solid;
+  border-collapse: collapse;
+}
+.tablice{
+  width: 100%;
+  max-width: 48vw;
+}
+label{
+  display: inline-block;
+  white-space: nowrap;
+
+}
+img{
+  height: 6vh;
+}
+@media(max-width:1000px){
+  .tablice{
+    width: 100%;
+    max-width: 95%;
+  }
+  .tabelaDrzava{
+    width: 95%;
+  }
+  .inputKlasa{
+    width: 90vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nevidljiv{
+    display: none;
+  }
+}

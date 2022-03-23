@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script src="main.js" type="module"></script>
+
+    <div class="meni">
+        <div class="meniItem meniDokumenti">
+            <h2>DOKUMENTI</h2>
+        </div>
+        <div class="meniItem meniDrzave">
+            <h2>DRŽAVE</h2>
+        </div>
+        <div class="meniItem meniPoternice">
+            <h2>POTERNICE</h2>
+        </div>
+    </div>
+    <div class="stranica stranicaDokumenti">
+        <div class="inputKlasa inputi">
+            <div>
+                <label for="selektTipDokumenti">Tip:</label>
+                <input type="radio" name="selektTipDokumenti" id="selektLicnaKartaTipDokumenti" value="0" checked>
+                <label for="selektLicnaKartaTipDokumenti">Lična karta</label>
+                <input type="radio" name="selektTipDokumenti" id="selektPasosTipDokumenti" value="1">
+                <label for="selektPasosTipDokumenti">Pasoš</label>
+                <input type="radio" name="selektTipDokumenti" id="selektVizaTipDokumenti" value="2">
+                <label for="selektVizaTipDokumenti">Viza</label>
+            </div>
+            <div>
+                <label for="selektDrzavljanstvoDokumenti">Odaberi držaljanstvo:</label>
+                <select name="selektDrzavljanstvoDokumenti" class="selektDrzavljanstvoDokumenti">
+
+                </select>
+            </div>
+            <div>
+                <label for="selektDatumDokumenti">Datum izdavanja:</label>
+                <input type="date" name="selektDatumDokumenti" id="selektDatumDokumenti" class="selektDatumDokumenti">
+            </div>
+            <button class="dugmeTraziDokumente">
+                Države koje podržavaju dokument
+            </button>
+            <button class="dugmeDodajDokumente">
+                Dodaj dokument
+            </button>
+        </div>
+        <div class=" inputKlasa subInputi">
+            <div class="ekstremniBoks">
+            </div>
+            <button class="dugmeDodajDokumente4Real">
+                Dodaj
+            </button>
+        </div>
+        <div class="ostalo tabeleKont">
+            <table class="tablice tabelaZelena tabelaDokumeniZelene">
+                <tr class="tabelaDokumeniNaslov">
+                    <th>
+                        Naziv države
+                    </th>
+                    <th>
+                        Zastava
+                    </th>
+                </tr>
+            </table>
+            <table class="tablice tabelaCrvene tabelaDokumeniCrvene">
+                <tr class="tabelaDokumeniNaslov">
+                    <th>
+                        Naziv države
+                    </th>
+                    <th>
+                        Zastava
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="stranica stranicaDrzave">
+        <div class="inputKlasa inputi">
+            <div>
+                <label for="selektDrzavaStranica">Odaberi državu</label>
+                <select name="selektDrzavaStranica" class="selektDrzavaStranica">
+
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="selektTabelaDrzavaStranica" id="selektPoternicaDrzavaStranica"
+                    value="Poternica" checked>
+                <label for="selektPoternicaDrzavaStranica">Poternice</label>
+                <input type="radio" name="selektTabelaDrzavaStranica" id="selektDokumentiDrzavaStranica"
+                    value="Dokumenti">
+                <label for="selektDokumentiDrzavaStranica">Dokumenti</label>
+            </div>
+        </div>
+        <div class="tabeleKont">
+            <table class="tabelaDrzava">
+
+            </table>
+        </div>
+
+    </div>
+    <div class="stranica stranicaPoternice">
+        <div class="inputKlasa inputi">
+            <div>
+                <label for="inputJmbgPoternice">JMBG:</label>
+                <input type="text" name="inputJmbgPoternice" id="inputJmbgPoternice" class="inputJmbgPoternice">
+            </div>
+            <button class="dugmeTraziPoternice" disabled>
+                Pretraži poternice
+            </button>
+            <button class="dugmeDodajPoternice" disabled>
+                Dodaj poternice
+            </button>
+        </div>
+        <div class="inputKlasa subInputi">
+            <div>
+                <input type="radio" name="selektStogocaPoterniceStranica" id="selektDaStogocaPoterniceStranica"
+                    value="true" checked>
+                <label for="selektPoternicaDrzavaStranica">Zabrana</label>
+                <input type="radio" name="selektStogocaPoterniceStranica" id="selektNeStogocaPoterniceStranica"
+                    value="false">
+                <label for="selektDokumentiDrzavaStranica">Kazna</label>
+            </div>
+            <div class="ekstremniBoks">
+            </div>
+            <button class="dugmeDodajPoternice4Real">
+                Dodaj
+            </button>
+        </div>
+        <div class="ostalo tabeleKont">
+            <table class="tablice tabelaZelena tabelaPoterniceZelene">
+                <tr class="tabelaPoterniceNaslov">
+                    <th>
+                        Naziv države
+                    </th>
+                    <th>
+                        Zastava
+                    </th>
+                </tr>
+            </table>
+            <table class="tablice tabelaCrvene tabelaPoterniceCrvene">
+                <tr class="tabelaPoterniceNaslov">
+                    <th>
+                        Naziv države
+                    </th>
+                    <th>
+                        Zastava
+                    </th>
+                </tr>
+            </table>
+            <button class="obrisiPoternicu">
+                Obrisi poternicu
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
